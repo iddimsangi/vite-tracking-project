@@ -14,7 +14,10 @@ const App:React.FC = () => {
         <Route path='/Pricing' element={<Pricing/>}/>
         <Route path='Product' element={<Product/>}/>
         <Route path='/Login' element={<Login/>}/>
-        <Route path='App' element={<AppLayout/>}/>
+        <Route path='App' element={<AppLayout/>}>
+            <Route path='cities' element={<h2>cities list</h2>}></Route>
+            <Route path='countrylist' element={<h2>countries list</h2>}></Route>
+        </Route>
         <Route path='*' element={<PageNotFound/>}/>
     </Routes>
 </BrowserRouter>
