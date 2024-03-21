@@ -19,9 +19,8 @@ const CountryList = ({ cities, isLoading }) => {
       index ===
       self.findIndex((t) => t.country === obj.country && t.emoji === obj.emoji)
   );
-
-  // if (!uniqueObjects.lenght)
-  //   return <Message message={"You can start Add your own countries visited"} />;
+  if (uniqueObjects.lenght === 0)
+    return <Message message={"You can start Add your own countries visited"} />;
 
   return (
     <ul className={styles.countryList}>
