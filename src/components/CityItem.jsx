@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './CityItem.module.css'
 
 const CityItem = ({city}) => {
-    console.log(city);
     const{cityName, emoji,date}=city
   return (
     <li className={styles.cityItem}>

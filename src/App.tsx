@@ -41,7 +41,7 @@ fetchCities()
         <Route path='/Login' element={<Login/>}/>
         <Route path='App' element={<AppLayout/>}>
          <Route path='cities' element={<CityList cities={cities} isLoading={isLoading}/>}></Route>
-            <Route path='countrylist' element={<CountryList/>}></Route>
+            <Route path='countrylist' element={<CountryList cities={cities} isLoading={isLoading}/>}></Route>
         </Route>
         <Route path='*' element={<PageNotFound/>}/>
     </Routes>
